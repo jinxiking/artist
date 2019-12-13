@@ -1,10 +1,7 @@
 <template>
-      <div>
-        <span>
-          asda
-        </span>
-        <HelloWorld></HelloWorld>
-      </div>
+    <div>
+      {{$t("home.title")}}
+    </div>
 </template>
  
 <script>
@@ -35,7 +32,7 @@
 
 <style scoped lang="scss">
     div{
-      background: red;
+    
       span{
         font-size: 100px;
       }
