@@ -1,6 +1,10 @@
 <template>
-    <div>
+    <div class='wrapper'>
       {{$t("home.title")}}
+      <div class="test">
+          <p class="hello">Hello</p>
+      </div>
+
     </div>
 </template>
  
@@ -18,7 +22,7 @@
     },
     created() {
       homeApi.curingServiceGoods().then((res)=>{
-        console.log(res)
+        
       })
     },
     mounted() {
@@ -31,10 +35,16 @@
 </script>
 
 <style scoped lang="scss">
-    div{
-    
-      span{
-        font-size: 100px;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .test{
+        width:1920px;
+        height:160px;
+        background-color: bisque;
+    }
+    .hello{
+        color:red;
     }
 </style>

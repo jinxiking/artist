@@ -4,8 +4,9 @@ import store from './store'
 import router from './router'
 import '@components'
 import filters from '@assets/js/filters';
-import i18n from './tools/i18n'
+import i18n from './tools/i18n';
 
+import '@assets/js/rem';
 //定义过滤器
 Object.keys(filters).forEach(element=>{
   Vue.filter(element, filters[element]);
